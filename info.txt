@@ -1,0 +1,31 @@
+profe : horacio.estevez@gmail.com
+slack : react-fizzmod
+https://github.com/HoracioGutierrez/fizzmod-front-end
+
+git revert <commit> : Revierte los cambios de uno o mas commits o un branch entero generando mas historial en el grafo. Ideal cuando lo que quiero revertir ya esta pusheado. 
+
+git reset <TIPO> <commit> : 
+
+TIPOS :
+
+    --soft : Mueve el HEAD a un commit anterior y mantiene el estado del WD y el SA
+
+    --mixed : DEFAULT - Mueve el HEAD a un commit anterior y no mantiene el estado del WD y el SA pero si mantiene los cambios.
+
+    --hard : Mueve el HEAD a un commit anterior y no mantiene ningun cambio
+
+
+git reflog : Nos muestra un log de acciones de hasta 30 dias
+
+blob : Hace referencia a un archivo 
+tree : Hace referencia a un directorio. Contiene Blobs
+commit : Hace referencia a un tree y/o blob. 
+tag : 
+
+    -no anotados : Genera comentarios dentro del WD pero no agrega nada al historial
+
+    -anotados : Generan un objeto nuevo en el historial y apuntan a commits 
+
+git tag -a <nombre> -m <subject> : Genera un tag anotado , una version de lanzamiento del proyecto. Estos se pushean aparte. 
+
+git stash : es un espacio temporal donde guardar trabajo que no queremos commitear. Este trabajo se puede restaurar en cualquier momento sobre cualquier branch. 
