@@ -14,7 +14,7 @@
  import React from "react" 
  import ReactDOM from "react-dom"
 
- let App = () => "Ble"
+ let App = () => <p>Aló</p>
 
  ReactDOM.render(
      <App>
