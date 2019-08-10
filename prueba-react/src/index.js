@@ -13,11 +13,10 @@
 
  import React from "react" 
  import ReactDOM from "react-dom"
+ import App from "./ui/layout/App"
 
- let App = () => <p>Aló</p>
 
  ReactDOM.render(
-     <App>
-     </App>,
+     <App/>,
     document.getElementById('root')
  )
