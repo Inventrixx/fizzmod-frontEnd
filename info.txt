@@ -1,4 +1,0 @@
-npm {install|i} <tipo> <paquete> : Instala un paquete
-    -g
-    -S|--save
-    -D|--save-dev

@@ -1,31 +1,40 @@
-profe : horacio.estevez@gmail.com
-slack : react-fizzmod
-https://github.com/HoracioGutierrez/fizzmod-front-end
-
-git revert <commit> : Revierte los cambios de uno o mas commits o un branch entero generando mas historial en el grafo. Ideal cuando lo que quiero revertir ya esta pusheado. 
-
-git reset <TIPO> <commit> : 
-
-TIPOS :
-
-    --soft : Mueve el HEAD a un commit anterior y mantiene el estado del WD y el SA
-
-    --mixed : DEFAULT - Mueve el HEAD a un commit anterior y no mantiene el estado del WD y el SA pero si mantiene los cambios.
-
-    --hard : Mueve el HEAD a un commit anterior y no mantiene ningun cambio
+npm {install|i} <tipo> <paquete> : Instala un paquete
+    -g
+    -S|--save
+    -D|--save-dev
 
 
-git reflog : Nos muestra un log de acciones de hasta 30 dias
+    app/
+        |_public/
+        |_src/
+            |_api/
+            |_ui/
+            |_layout/ --> plantilla de la página
+                |_App.js
+            |_paginas/
+            |_widgets
 
-blob : Hace referencia a un archivo 
-tree : Hace referencia a un directorio. Contiene Blobs
-commit : Hace referencia a un tree y/o blob. 
-tag : 
 
-    -no anotados : Genera comentarios dentro del WD pero no agrega nada al historial
 
-    -anotados : Generan un objeto nuevo en el historial y apuntan a commits 
+Props disponibles
 
-git tag -a <nombre> -m <subject> : Genera un tag anotado , una version de lanzamiento del proyecto. Estos se pushean aparte. 
+- Expresión JS
+<Foo test={1+1} />
+<Foo test={()=>{})} />
 
-git stash : es un espacio temporal donde guardar trabajo que no queremos commitear. Este trabajo se puede restaurar en cualquier momento sobre cualquier branch. 
+- String
+
+<Foo test="" />
+
+- Boolean
+
+<Foo test /> ---> Aunque esté vacío, este prop es 'true'
+
+eventos sintéticos
+
+El estado de un componente NO se puede cambiar por asignación de variable
+
+Para cambiarlo, se usa this.setState()
+
+Componente controlado -> a medida que el usuario va escribiendo, se lo manda a otro
+por lo que si desmonto el componente, voy a tener su información en otro componente
