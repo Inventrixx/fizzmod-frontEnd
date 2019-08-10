@@ -1,8 +1,10 @@
-# FIZZMOD
+# Fizzmod Capacitación en React y Javascript. 
 
-## clase 1
+## Alumna: Bárbara Del Vitto 
 
-* GIT
-1. rebase 
-2. revert
-3. reset
+## Branches:
+
+### - js1 -> Ejercicio 1
+### - js2 -> Ejercicio 2
+### - js3 -> Ejercicio 3
+### - Prototipos -> branch en donde va a quedar el trabajo final de React. 
