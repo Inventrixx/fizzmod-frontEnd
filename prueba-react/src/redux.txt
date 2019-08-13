@@ -1,0 +1,37 @@
+Redux: Es una librerìa para manejar el estado de una aplicación - No tiene nada que ver con 
+
+react-redux: Es una librería que integra redux con react
+
+npm i --save redux react-redux
+
+'----------------------------------------------------------------'
+
+Redux -> el store son múltiples modificaciones
+    -> Provider: 
+- Reducer: Función pura. No necesita import. Me describe todos los cambios 
+posibles que tengo en mi aplicación. 
+        ---> Contiene un switch(). 
+
+
+src/
+    |_ui
+    |_api
+        |_store.js
+        |_reducer.js
+        |_actions /
+            |_Formulario.js
+        |_reducers/
+            |_Formulario.js
+
+
+Implementación de Redux
+1 - Crear un store con createStore
+2 - Meter toda la aplicación dentro de un <Provider>
+3 - Pasarle el store al provider por prop.
+4 - Crear un reducer como una funciíon pura que toma un estado anterior o inicial y un action, que puede ser 
+cualquier cosa.
+5 - Completar el reducer con todos los cambios posibles de la aplicación
+6 - Pasar el reducer con parámetro al store
+(*Nota: podemos activar la consola de redux)
+
+Nota: el componente Provider asegtura que cualquier componente hijo de la aplicación 

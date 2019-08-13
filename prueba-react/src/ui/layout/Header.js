@@ -1,5 +1,5 @@
 import React, {Component, Fragment} from "react"
-import "../../widgets/layout.css"
+import "./widgets/layout.css"
 
 
 class Header extends Component {
