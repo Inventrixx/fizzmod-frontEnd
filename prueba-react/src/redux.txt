@@ -34,4 +34,15 @@ cualquier cosa.
 6 - Pasar el reducer con parámetro al store
 (*Nota: podemos activar la consola de redux)
 
-Nota: el componente Provider asegtura que cualquier componente hijo de la aplicación 
+Nota: el componente Provider asegtura que cualquier componente hijo de la aplicación
+
+Implementación Redux 2 
+1 - Pasar el state 'links' del componente App al store de redux
+2 - Conectar el componente Header para poder consumir el array de links desde el redux y no desde el state
+de app
+3 - Pasar el <button> que modifica el state 'mostrar' del componente App adentro del componente _Formulari
+4 - Pasar el state 'mostrar', 'usuario' y 'usuarios' de App al store del redux
+5 - Conectar el componente Formulario para que consuma las propiedades del punto anterior desde redux
+6 - Implementar actions tales como los metodos que teniamos en app
+7 - Contectar los metodos de la función dispatch dentro de Formulario para que vuelva a funcionar 
+el submit y el charge

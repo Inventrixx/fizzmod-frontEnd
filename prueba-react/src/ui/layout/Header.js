@@ -1,21 +1,19 @@
-import React, {Component, Fragment} from "react"
+import React, { Component, Fragment } from "react"
 import "./widgets/layout.css"
-
+import { connect } from "react-redux"
+import { NavLink}  from "react-router-dom"
 
 class Header extends Component {
     render() {
         let { links } = this.props
+        console.log(this.props)
         return(
                 <header>
                     <h1>SPA</h1>
                     <nav>
                         {links.map((link, i) => 
 
-                            <Fragment key={i}>
-                                <div className="link">
-                                    <a href="#" key={i}>{link}</a>
-                                </div>
-                            </Fragment>
+                            <NavLink to={`/${link}`} key={i}>{link}</NavLink>
                             
                             )}
                     </nav>
@@ -27,4 +25,8 @@ class Header extends Component {
 
 
 
-export default Header;
+export default connect(store=>({
+    links: store.links
+})
+
+)(Header);

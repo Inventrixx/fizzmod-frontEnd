@@ -1,16 +1,18 @@
 /**
  * El reducer recibe dos parámetros, el estado inicial y una acción
+ * Siempre, de ser posible, diagramar todos los estados posibles. 
  */
 
 
 let estadoInicial = {
-    contador: 0
+    contador: 0,
+    links: ["perfil", "portfolio", "contacto"]
 }
 
 
 
 let reducer = (estado=estadoInicial,action) => {
-    switch(action){
+    switch(action.type){
         case "CONTADOR_AUMENTAR":
             return {...estado, contador: estado.contador + 1}
         case "CONTADOR_DISMINUIR":

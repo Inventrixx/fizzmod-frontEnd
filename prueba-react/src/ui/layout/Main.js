@@ -1,4 +1,6 @@
 import React, {Component, Fragment} from "react"
+import {Route} from "react-router-dom"
+// import Home from "../"
 
 class Main extends Component {
 

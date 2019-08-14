@@ -8,7 +8,6 @@ class App extends Component {
     constructor(){
         super()
         this.state = {
-            links: ["perfil", "portfolio", "contacto"],
             contador: 0,
             mostrar: true,
             usuario: '',
